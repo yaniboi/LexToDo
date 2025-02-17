@@ -1,0 +1,227 @@
+body{
+    background: rgb(245, 255, 254);
+}
+.TodoApp{
+   
+    text-align: center;
+    margin-top: 100px;
+
+}
+h1{
+    margin-bottom: 50px;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem; 
+    margin-top: -50px; 
+    text-align: center;
+    color: rgb(244, 81, 44); 
+}
+button{
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    
+}
+.add-button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem; 
+    font-weight: bolder;
+    padding: 10px;
+    background-color: rgb(255,127,77);
+    border: 2px solid rgb(136, 136, 136);
+    border-radius: 5px;
+    color: rgb(245, 255, 254);
+    width: 90px;
+}
+.add-button:hover{
+    background-color: rgb(244, 81, 44); 
+    
+}
+.delete-all{
+        padding: 8.5px;
+        background-color: rgb(94, 27, 137); 
+        border: 2px solid rgb(136, 136, 136);
+        border-radius: 5px;
+        color: rgb(245, 255, 254);
+        width: 90px;
+}
+.delete-all:hover{
+    background-color:rgb(40, 7, 63);
+}
+.delete-button{
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid rgb(94, 27, 137);
+    background-color: rgb(245, 255, 254);
+}
+.delete-button:hover{
+    background-color: rgb(255,127,77);
+}
+.edit-button{
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid rgb(94, 27, 137);
+    background-color: rgb(245, 255, 254);
+}
+.edit-button:hover{
+    background-color: rgb(255,127,77);
+}
+.save-button{
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid rgb(94, 27, 137);
+    background-color: rgb(94, 27, 137);
+}
+.save-button:hover{
+    background-color: rgb(255,127,77);
+}
+
+.done-button {
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid rgb(94, 27, 137);
+    background-color: rgb(245, 255, 254);
+}
+.done-button:hover {
+    background-color: rgb(255,127,77);
+}
+/* Cross out the task when marked as done */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.input-container{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem; 
+    padding-left: 20px;      /* Optional: Space from left edge */
+    text-align: center;
+}
+input[type="text"]{
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 2px solid rgb(136, 136, 136);
+    border-radius: 5px;
+    color: black;
+    width: 300px;
+}
+input[type="datetime-local"]{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 2px solid rgb(136, 136, 136);
+    border-radius: 5px;
+    color: black;
+    width: 300px;
+}
+select {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;  /* Set font size to 18px */
+    padding: 10px;    /* Optional: Adjust padding for better spacing */
+    border-radius: 5px;
+    border: 2px solid rgb(136, 136, 136);  /* Optional: Border for the dropdown */
+}
+.text{
+    text-align: left;
+}
+ol{
+    padding: 0;
+}
+li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 8px;
+    background-color: rgb(157, 113, 188);
+    margin-bottom: 10px;
+    border: 3px solid rgb(94, 27, 137);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.task-content {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+.text{
+    flex:1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+.task-text{
+    color: rgb(49, 49, 49);
+    font-family:arie system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.DateNPrio {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align horizontally */
+    justify-content: center; /* Center align vertically */
+    text-align: center; /* Ensure text inside elements is centered */
+}
+
+.priority-box {
+    padding: 10px;
+    width: 120px; /* Fixed width to align properly */
+    text-align: center;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+.task-datetime{
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 120px; /* Fixed width to align properly */
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    background-color: rgb(136, 41, 196);
+    color: white;
+    border: 3px solid rgb(255, 127, 77); 
+}
+
+/* Different colors for priority levels */
+.priority-1 {
+    background-color: rgb(244, 44, 44); 
+    color: white;
+    border: 3px solid rgb(171, 66, 0);
+}
+.priority-2 {
+    background-color: rgb(244, 81, 44); 
+    color: white;
+    border: 3px solid rgb(171, 66, 0);
+}
+.priority-3 {
+    background-color: rgb(0, 188, 16);
+    color: white;
+    border: 3px solid rgb(14, 133, 28);
+}
+/* Crossed-out priority when task is marked done */
+.completed-priority {
+    background-color: rgb(20, 159, 10) !important;
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.completed-date{
+    background-color: rgb(20, 159, 10) !important;
+    border: 3px solid rgb(20, 159, 10);
+    text-decoration: line-through;
+    opacity: 0.6;
+}
